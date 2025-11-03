@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>عيادة سارة - تواصل</title>
 
+  <!-- أيقونة المتصفح -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
   <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 
   <style>
@@ -78,6 +81,7 @@
       display:grid;
       gap:16px;
       padding:0 8px;
+      margin-bottom:32px; /* مسافة بعد الأزرار */
     }
 
     .pill{
@@ -113,14 +117,23 @@
       height:32px;
     }
 
+    /* سطح المكتب */
     @media(min-width:720px){
-      body{padding:48px}
+      body{padding:60px}
       .logo{width:200px;height:200px}
-      h1{font-size:35px}
-      h2{font-size:24px}
-      .pill{font-size:20px;padding:16px 22px}
-      .icon{width:56px;height:56px}
-      .icon svg{width:36px;height:36px}
+      h1{font-size:34px}
+      h2{font-size:22px}
+      .pill{
+        font-size:16px;       /* صغّر الخط */
+        padding:10px 14px;    /* صغّر الأزرار فعلاً */
+      }
+      .icon{width:46px;height:46px}
+      .icon svg{width:30px;height:30px}
+      /* كبّر أيقونة فيسبوك بس */
+      .pill:nth-child(2) .icon svg{
+        width:40px;
+        height:40px;
+      }
     }
   </style>
 </head>
@@ -168,4 +181,3 @@
   </main>
 </body>
 </html>
-
